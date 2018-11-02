@@ -6,6 +6,7 @@
 
 h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
+    /* font-size:2.3vw; */
 }
 
 h1 a:link {
@@ -35,6 +36,7 @@ nav a:hover {
 
 h2{
     font-family: 'Georgia', Times, Times New Roman, serif;
+    /* font-size:2.3vw; */
     font-size: 30px;
     color: #4aaaa5;
     padding-bottom: 30px;
@@ -51,6 +53,7 @@ h2{
 
 p{
    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+   /* font-size: 1.18vw; */
    line-height: 1.5em;
    padding-bottom: 15px;
    color:#777777;
@@ -83,13 +86,13 @@ nav{
     width:245px;
     float: right;
     margin-top: 40px;
-    margin-right: -25px;
+    margin-right: -23px;
 }
 
 nav li {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	display: inline;
-    font-size: 16px;
+    /* font-size: 1.18vw; */
     padding: 0 10px;
     border-right: 1px solid #cccccc;
     font-weight: 500;
@@ -116,7 +119,6 @@ nav a:hover {
 	width: 960px;
 	margin-left: auto;
 	margin-right:auto;
-	overflow: hidden;
 }
 
 body{
@@ -129,6 +131,7 @@ main{
     margin-top: 65px;
     float:center;
     padding: 45px 30px;
+    position: relative;
 }
 
 footer{
@@ -151,6 +154,7 @@ footer p{
 
 .homeimg{
     float: left;
+    width: 200px;
     padding-right: 25px;
     padding-bottom: 15px;
 }
@@ -237,16 +241,12 @@ h3{
 
 #placeholder1{
     position: relative;
-    float:left;
-    width: 275px;
     padding-bottom: 50px;
     z-index: inherit -1;
 }
 
 #placeholder2{
     position: relative;
-    float:right;
-    margin-right: 300px;
     width: 275px;
     padding-bottom: 50px;
     z-index: inherit -1;
@@ -254,31 +254,283 @@ h3{
 
 #placeholder3{
     position: relative;
-    float:left;
-    clear: both;
-    width: 275px;
     padding-bottom: 50px;
     z-index: inherit -1;
 }
 
 #placeholder4{
     position: relative;
-    float:right;
-    margin-right: 300px;
-    width: 275px;
     padding-bottom: 50px;
     z-index: inherit -1;
 }
 
 #placeholder5{
     position: relative;
-    float:left;
-    clear: both;
-    width: 275px;
     padding-bottom: 50px;
     z-index: inherit -1;
 }
 
 .extend {
     height: 850px;
+}
+
+
+/* mobile */
+@media only screen and (min-width: 640px) {
+    /* body {
+        background-color: lightblue;
+    } */
+
+    #wrapper{
+        width: 630px;
+    }
+    
+    #colorbar {
+        height: 200px;
+    }
+
+    #top {
+        width: 100%;
+    }
+
+    #name{
+        width: 100%;
+        text-align:center;
+    }
+    
+    nav{
+        width:100%;
+        text-align:center;
+    }
+    .homeimg{
+        width: 100%
+    }
+    #placeholder1{
+        width: 100%;
+        margin:0;
+        float:none;
+    }
+
+    #placeholder1 img{
+        width: 100%
+    }
+
+    #placeholder2{
+        width: 100%;
+        margin:0;
+        float:none;
+    }
+
+    #placeholder2 img{
+        width: 100%
+    }
+
+    #placeholder3{
+        width: 100%;
+        margin:0;
+        float:none;
+    }
+
+    #placeholder3 img{
+        width: 100%
+    }
+
+    #placeholder4{
+        width: 100%;
+        margin:0;
+        float:none;
+    }
+
+    #placeholder4 img{
+        width: 100%
+    }
+
+    #placeholder5{
+        width: 100%;
+        margin:0;
+        float:none;
+    }
+
+    #placeholder5 img{
+        width: 100%
+    }
+
+    h3{
+        width:94.8%;
+    }
+
+    .extend{
+        height: 80%;
+    }
+}
+
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+    /* body {
+        background-color: hotpink;
+    } */
+
+    #wrapper{
+        width: 758px;
+    }
+
+    #top {
+        width: 758px;
+    }
+
+    #name{
+        width:40%;
+    }
+    
+    nav{
+        width:30%;
+        margin-right:0;
+    }
+
+    #colorbar {
+        height: auto;
+    }
+
+    .homeimg{
+        width: 50%;
+    }
+
+    #placeholder1{
+        width: 46%;
+        margin:0;
+        float:left;
+    }
+
+    #placeholder1 img{
+        width: 100%;
+    }
+
+    #placeholder2{
+        width: 46%;
+        margin:0;
+        float:right;
+    }
+    #placeholder2 img{
+        width: 100%
+    }
+
+    #placeholder3{
+        width: 46%;
+        margin:0;
+        float:left;
+        clear: both;
+    }
+    #placeholder3 img{
+        width: 100%
+    }
+
+    #placeholder4{
+        width: 46%;
+        margin:0;
+        float:right;
+    }
+    #placeholder4 img{
+        width: 100%
+    }
+
+    #placeholder5{
+        width: 46%;
+        margin:0;
+        float:left;
+        clear:both;
+    }
+    #placeholder5 img{
+        width: 100%
+    }
+
+    h3{
+        width:90.5%;
+    }
+
+    .extend{
+        height:950px;
+    }
+}
+
+
+/* For desktop */
+@media only screen and (min-width: 980px) {
+    /* body {
+        background-color: orange;
+    } */
+
+    #top{
+        width: 960px;
+    }
+    #wrapper{
+        width: 960px;
+    }
+
+    #name{
+        width:31%;
+    }
+
+    nav{
+        margin-right: -25px;
+    }
+
+    .homeimg{
+        width:21%;
+    }
+
+    #placeholder1 img{
+        width: 100%;
+    }
+    #placeholder2 img{
+        width: 100%
+    }
+    #placeholder3 img{
+        width: 100%
+    }
+
+    #placeholder4 img{
+        width: 100%
+    }
+
+    #placeholder5 img{
+        width: 100%
+    }
+
+    h3{
+        width:89.5%;
+    }
+
+    #placeholder1{
+        float:left;
+        width: 32%;
+    }
+    
+    #placeholder2{
+        float:right;
+        margin-right: 270px;
+        width: 32%;
+    }
+    
+    #placeholder3{
+        float:left;
+        clear: both;
+        width: 32%;
+    }
+    
+    #placeholder4{
+        float:right;
+        margin-right: 270px;
+        width: 32%;
+    }
+    
+    #placeholder5{
+        float:left;
+        clear: both;
+        width: 32%;
+    }
+
+    .extend{
+        height:880px;
+    }
 }
